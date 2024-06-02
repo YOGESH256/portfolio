@@ -10,11 +10,11 @@ from .api import api_router
 from search import views as search_views
 
 urlpatterns = [
-    path("django-admin/", admin.site.urls),
-    path("admin/", include(wagtailadmin_urls)),
-    path("documents/", include(wagtaildocs_urls)),
-    path("search/", search_views.search, name="search"),
-    path("api/v2/",api_router.urls),
+    path("wagtail/django-admin/", admin.site.urls),
+    path("wagtail/admin/", include(wagtailadmin_urls)),
+    path("wagtail/documents/", include(wagtaildocs_urls)),
+    path("wagtail/search/", search_views.search, name="search"),
+    path("wagtail/api/v2/",api_router.urls),
 ]
 
 

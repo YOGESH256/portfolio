@@ -81,16 +81,16 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "mysite.wsgi.application"
 
-
+BASE_URL_PATH = '/wagtail'
 # Database
 # https://docs.djangoproject.com/en/5.0/ref/settings/#databases
 
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'portfolio',
-        'USER': 'postgres',
-        'PASSWORD': '2565784abc',
+        'NAME': 'wagtail_db',
+        'USER': 'wagtail_user',
+        'PASSWORD': '123456',
         'HOST': 'localhost',
         'PORT': 5432,
     }
